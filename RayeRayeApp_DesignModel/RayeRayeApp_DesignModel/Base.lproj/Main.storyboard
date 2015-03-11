@@ -1,0 +1,810 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6254" systemVersion="14C109" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" initialViewController="vXZ-lx-hvc">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6247"/>
+        <capability name="Alignment constraints to the first baseline" minToolsVersion="6.0"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <capability name="Constraints with non-1.0 multipliers" minToolsVersion="5.1"/>
+    </dependencies>
+    <scenes>
+        <!--Splash View Controller-->
+        <scene sceneID="ufC-wZ-h7g">
+            <objects>
+                <viewController id="vXZ-lx-hvc" customClass="SplashViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="iqh-d2-eNV"/>
+                        <viewControllerLayoutGuide type="bottom" id="fHq-ac-hqk"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="kh9-bI-dsS">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Sample screen.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="fCg-8o-BIK">
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ypM-R0-Uhb">
+                                <rect key="frame" x="22" y="228" width="277" height="75"/>
+                                <state key="normal">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <segue destination="Qy6-sY-KNE" kind="modal" id="oGy-Dm-qTC"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="fCg-8o-BIK" secondAttribute="trailing" id="SAk-S8-4aK"/>
+                            <constraint firstItem="fCg-8o-BIK" firstAttribute="top" secondItem="kh9-bI-dsS" secondAttribute="top" id="mpZ-RL-R22"/>
+                            <constraint firstItem="fCg-8o-BIK" firstAttribute="leading" secondItem="kh9-bI-dsS" secondAttribute="leading" id="tdE-K6-G1T"/>
+                            <constraint firstItem="fCg-8o-BIK" firstAttribute="bottom" secondItem="fHq-ac-hqk" secondAttribute="top" id="uri-eJ-zcv"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="x5A-6p-PRh" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="234" y="344"/>
+        </scene>
+        <!--Player View Controller-->
+        <scene sceneID="tmJ-Fm-gdP">
+            <objects>
+                <viewController id="Qy6-sY-KNE" customClass="YTPlayerViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="aPM-4W-WN4"/>
+                        <viewControllerLayoutGuide type="bottom" id="etv-xw-eIY"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="nn4-mF-djP">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="VideoViewFrame.png" translatesAutoresizingMaskIntoConstraints="NO" id="F7A-jF-ynt">
+                                <rect key="frame" x="-1" y="20" width="322" height="142"/>
+                            </imageView>
+                            <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" image="NewsButton.png" translatesAutoresizingMaskIntoConstraints="NO" id="xKU-Zb-ruW">
+                                <rect key="frame" x="-1" y="499" width="322" height="70"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="70" id="0Lo-dX-7Tx"/>
+                                </constraints>
+                            </imageView>
+                            <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" image="EventsButton.png" translatesAutoresizingMaskIntoConstraints="NO" id="AUQ-wa-V0W">
+                                <rect key="frame" x="0.0" y="400" width="322" height="70"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="70" id="nez-ja-c5C"/>
+                                </constraints>
+                            </imageView>
+                            <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" image="ProductList.png" translatesAutoresizingMaskIntoConstraints="NO" id="pwP-Vq-oBh">
+                                <rect key="frame" x="-2" y="301" width="322" height="70"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="70" id="g8V-YB-fww"/>
+                                </constraints>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="aCb-F2-HD9">
+                                <rect key="frame" x="0.0" y="301" width="320" height="70"/>
+                                <state key="normal">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <segue destination="Gsw-gU-2yt" kind="modal" id="AKD-1y-iDY"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="z5O-u9-RfI">
+                                <rect key="frame" x="-1" y="400" width="321" height="70"/>
+                                <state key="normal">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <segue destination="Jek-4V-CVk" kind="modal" id="8vF-fl-9YW"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cOz-LM-u1w">
+                                <rect key="frame" x="0.0" y="499" width="322" height="69"/>
+                                <state key="normal">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <segue destination="miM-fj-nvi" kind="modal" id="vgu-mG-N7Z"/>
+                                </connections>
+                            </button>
+                            <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" image="PlayButton.png" translatesAutoresizingMaskIntoConstraints="NO" id="uuT-JK-nko">
+                                <rect key="frame" x="0.0" y="202" width="322" height="70"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="70" id="ACP-Xu-L1o"/>
+                                </constraints>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" red="0.97254901959999995" green="0.92941176469999998" blue="0.93725490199999995" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstItem="F7A-jF-ynt" firstAttribute="leading" secondItem="nn4-mF-djP" secondAttribute="leadingMargin" constant="-17" id="7b8-hH-8ze"/>
+                            <constraint firstItem="uuT-JK-nko" firstAttribute="top" secondItem="pwP-Vq-oBh" secondAttribute="bottom" constant="-169" id="9VV-2N-uJ0"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="uuT-JK-nko" secondAttribute="trailing" constant="-18" id="IQ0-vV-Bl5"/>
+                            <constraint firstItem="pwP-Vq-oBh" firstAttribute="top" secondItem="F7A-jF-ynt" secondAttribute="bottom" constant="139" id="IWv-2u-gTQ"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="AUQ-wa-V0W" secondAttribute="trailing" constant="-18" id="KA3-yF-Aod"/>
+                            <constraint firstItem="F7A-jF-ynt" firstAttribute="top" secondItem="aPM-4W-WN4" secondAttribute="bottom" id="Nsi-WF-Pqx"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="xKU-Zb-ruW" secondAttribute="trailing" constant="-17" id="Tp6-8n-C9d"/>
+                            <constraint firstItem="AUQ-wa-V0W" firstAttribute="leading" secondItem="nn4-mF-djP" secondAttribute="leadingMargin" constant="-16" id="WFx-sf-1q8"/>
+                            <constraint firstItem="xKU-Zb-ruW" firstAttribute="leading" secondItem="nn4-mF-djP" secondAttribute="leadingMargin" constant="-17" id="bUo-Bc-ocQ"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="pwP-Vq-oBh" secondAttribute="trailing" constant="-16" id="cbe-1A-nuJ"/>
+                            <constraint firstItem="AUQ-wa-V0W" firstAttribute="top" secondItem="uuT-JK-nko" secondAttribute="bottom" constant="128" id="dvo-Vs-wdU"/>
+                            <constraint firstItem="xKU-Zb-ruW" firstAttribute="top" secondItem="AUQ-wa-V0W" secondAttribute="bottom" constant="29" id="qdq-YL-xVO"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="F7A-jF-ynt" secondAttribute="trailing" constant="-17" id="smM-oT-f9V"/>
+                            <constraint firstItem="uuT-JK-nko" firstAttribute="leading" secondItem="nn4-mF-djP" secondAttribute="leadingMargin" constant="-16" id="w9l-Ai-Z1k"/>
+                            <constraint firstItem="pwP-Vq-oBh" firstAttribute="leading" secondItem="nn4-mF-djP" secondAttribute="leadingMargin" constant="-18" id="wUc-PB-u8L"/>
+                            <constraint firstAttribute="height" secondItem="F7A-jF-ynt" secondAttribute="height" multiplier="4" id="zWg-vW-Ezc"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="vHJ-Jd-Ffq" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="634" y="344"/>
+        </scene>
+        <!--News View Controller-->
+        <scene sceneID="WVR-41-IRX">
+            <objects>
+                <viewController id="miM-fj-nvi" customClass="NewsViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="hYS-hP-2o4"/>
+                        <viewControllerLayoutGuide type="bottom" id="BN4-R6-Xud"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="la0-aM-SAN">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="News.png" translatesAutoresizingMaskIntoConstraints="NO" id="fRd-NP-7wV">
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="opN-jB-ngh">
+                                <rect key="frame" x="11" y="83" width="60" height="66"/>
+                                <state key="normal">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="RaU-bl-4xS">
+                                <rect key="frame" x="10" y="20" width="35" height="30"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                <state key="normal" title="Back">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <segue destination="Qy6-sY-KNE" kind="modal" id="uDf-EE-M8x"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ldP-C5-XCG">
+                                <rect key="frame" x="10" y="519" width="46" height="41"/>
+                                <state key="normal">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <segue destination="Bha-aB-awS" kind="modal" id="tzm-tO-qJq"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="VXb-Tz-fHw">
+                                <rect key="frame" x="268" y="519" width="46" height="41"/>
+                                <state key="normal">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <segue destination="b8P-Zs-geQ" kind="modal" id="TdF-KV-xjc"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="rGd-qy-xye">
+                                <rect key="frame" x="79" y="91" width="225" height="66"/>
+                                <state key="normal">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <segue destination="mLG-7m-yOC" kind="modal" id="nBZ-fq-LcI"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="kpD-Fk-KdO" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1050" y="1618"/>
+        </scene>
+        <!--News Link View Controller-->
+        <scene sceneID="a3x-W8-ZgQ">
+            <objects>
+                <viewController id="mLG-7m-yOC" customClass="NewsLinkViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="2Dr-U2-8aL"/>
+                        <viewControllerLayoutGuide type="bottom" id="lwD-Cx-Gef"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="AOI-HG-iQe">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="News_Link.png" translatesAutoresizingMaskIntoConstraints="NO" id="xfd-eD-k22">
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="B11-eK-S9g">
+                                <rect key="frame" x="8" y="518" width="49" height="42"/>
+                                <state key="normal">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <segue destination="Bha-aB-awS" kind="modal" id="xeY-5f-KxW"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Bwf-Ow-KgJ">
+                                <rect key="frame" x="267" y="518" width="49" height="42"/>
+                                <state key="normal">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <segue destination="b8P-Zs-geQ" kind="modal" id="3Jj-6N-wNi"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="id9-Kv-BXv">
+                                <rect key="frame" x="10" y="20" width="35" height="30"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                <state key="normal" title="Back">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <segue destination="miM-fj-nvi" kind="modal" id="HQB-TU-1r3"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cKr-jW-VEc">
+                                <rect key="frame" x="275" y="20" width="35" height="30"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                <state key="normal" title="Menu">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <segue destination="Qy6-sY-KNE" kind="modal" id="S87-Li-1Ab"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="VX2-lQ-dDy" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1430" y="1618"/>
+        </scene>
+        <!--Events View Controller-->
+        <scene sceneID="1HC-Ch-zxf">
+            <objects>
+                <viewController id="Jek-4V-CVk" customClass="EventsViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="M8w-5H-kHB"/>
+                        <viewControllerLayoutGuide type="bottom" id="3ZW-j3-3nh"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="rhl-Sy-IFl">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Events_Screen.png" translatesAutoresizingMaskIntoConstraints="NO" id="2Lg-rM-7E7">
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="naB-qA-N89">
+                                <rect key="frame" x="16" y="20" width="35" height="30"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                <state key="normal" title="Back">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <segue destination="Qy6-sY-KNE" kind="modal" id="8bY-8U-HWA"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="lXv-Ba-LNB">
+                                <rect key="frame" x="251" y="293" width="53" height="36"/>
+                                <state key="normal">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <segue destination="JAt-TD-uXi" kind="modal" id="p5L-AW-Dku"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wyU-9w-8vM">
+                                <rect key="frame" x="251" y="373" width="53" height="36"/>
+                                <state key="normal">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <segue destination="JAt-TD-uXi" kind="modal" id="I03-0O-Z3K"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1J3-Ga-Dxi">
+                                <rect key="frame" x="251" y="449" width="53" height="36"/>
+                                <state key="normal">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <segue destination="JAt-TD-uXi" kind="modal" id="xhb-1a-7K0"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ry6-gk-gWL">
+                                <rect key="frame" x="10" y="518" width="41" height="42"/>
+                                <state key="normal">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <segue destination="Cuj-o0-hmX" kind="modal" id="DjA-wU-c0i"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="CU5-Tb-pKf">
+                                <rect key="frame" x="263" y="518" width="41" height="42"/>
+                                <state key="normal">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <segue destination="tS1-4f-axa" kind="modal" id="UFh-54-Z4Y"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="2Lg-rM-7E7" firstAttribute="leading" secondItem="rhl-Sy-IFl" secondAttribute="leadingMargin" constant="-16" id="FYd-f0-ZLV"/>
+                            <constraint firstItem="2Lg-rM-7E7" firstAttribute="top" secondItem="rhl-Sy-IFl" secondAttribute="topMargin" id="Gz5-Jy-ttH"/>
+                            <constraint firstItem="3ZW-j3-3nh" firstAttribute="top" secondItem="2Lg-rM-7E7" secondAttribute="bottom" id="fjh-mc-zpS"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="2Lg-rM-7E7" secondAttribute="trailing" constant="-16" id="mbO-aY-CH9"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="HEk-hv-K2g" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1050" y="344"/>
+        </scene>
+        <!--Map View Controller-->
+        <scene sceneID="08B-23-9Uj">
+            <objects>
+                <viewController id="JAt-TD-uXi" customClass="RSVPMapViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="NlF-dv-Ybn"/>
+                        <viewControllerLayoutGuide type="bottom" id="h9x-ZH-oj6"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="Pt6-Bb-tOd">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Map.png" translatesAutoresizingMaskIntoConstraints="NO" id="j6D-TG-nkx">
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="First Name and Last Name" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="peN-mJ-sTA">
+                                <rect key="frame" x="16" y="84" width="288" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Email Address" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xav-my-au0">
+                                <rect key="frame" x="16" y="125" width="288" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="You are now registered for: (Event Name)" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="d9A-hc-mCr">
+                                <rect key="frame" x="16" y="169" width="288" height="76"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Map Event's Location" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="W8o-kU-44r">
+                                <rect key="frame" x="16" y="267" width="288" height="27"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="18"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="FXL-fI-qX2">
+                                <rect key="frame" x="10" y="519" width="46" height="41"/>
+                                <state key="normal">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <segue destination="Cuj-o0-hmX" kind="modal" id="0td-s1-TP5"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6gA-QL-7yf">
+                                <rect key="frame" x="269" y="519" width="46" height="41"/>
+                                <state key="normal">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <segue destination="tS1-4f-axa" kind="modal" id="JMs-2g-2lj"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="aet-rT-j98">
+                                <rect key="frame" x="10" y="20" width="35" height="30"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                <state key="normal" title="Back">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <segue destination="Jek-4V-CVk" kind="modal" id="EXd-Ul-qft"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="MDi-Pk-tqS">
+                                <rect key="frame" x="275" y="20" width="35" height="30"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                <state key="normal" title="Menu">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <segue destination="Qy6-sY-KNE" kind="modal" id="0vg-xT-zL0"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="08h-6S-Arb" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1430" y="344"/>
+        </scene>
+        <!--Map Twitter View Controller-->
+        <scene sceneID="eDF-5l-HxO">
+            <objects>
+                <viewController id="Cuj-o0-hmX" customClass="RSVPMapTwitterViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="25i-Et-oor"/>
+                        <viewControllerLayoutGuide type="bottom" id="5bp-C3-2cK"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="TQY-B8-p0W">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="ShareTwitter_Events.png" translatesAutoresizingMaskIntoConstraints="NO" id="GOn-hK-bLy">
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bKV-Aw-KGc">
+                                <rect key="frame" x="10" y="20" width="35" height="30"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                <state key="normal" title="Back">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <segue destination="JAt-TD-uXi" kind="modal" id="xOp-Ge-OdE"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xpB-Qo-cSY">
+                                <rect key="frame" x="275" y="20" width="35" height="30"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                <state key="normal" title="Menu">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <segue destination="Qy6-sY-KNE" kind="modal" id="fHI-9h-GZQ"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="hXV-ut-kgH" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1810" y="680"/>
+        </scene>
+        <!--News Link Twitter View Controller-->
+        <scene sceneID="j1J-7Y-Bws">
+            <objects>
+                <viewController id="Bha-aB-awS" customClass="NewsLinkTwitterViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="TAl-pi-puc"/>
+                        <viewControllerLayoutGuide type="bottom" id="SF5-DI-wri"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="Mnm-fH-1RZ">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="ShareTwitter_NewsLink.png" translatesAutoresizingMaskIntoConstraints="NO" id="NuY-3n-Vt2">
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="v93-f3-upU">
+                                <rect key="frame" x="10" y="20" width="35" height="30"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                <state key="normal" title="Back">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <segue destination="mLG-7m-yOC" kind="modal" id="Jgk-jf-eTW"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ez3-ui-UpY">
+                                <rect key="frame" x="275" y="20" width="35" height="30"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                <state key="normal" title="Menu">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <segue destination="Qy6-sY-KNE" kind="modal" id="a9G-pc-QaH"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="UiR-wm-R3M" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1810" y="1970"/>
+        </scene>
+        <!--Favorites View Controller-->
+        <scene sceneID="ZJx-dh-L3J">
+            <objects>
+                <viewController id="Gsw-gU-2yt" customClass="FavoritesViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="m1U-D9-pht"/>
+                        <viewControllerLayoutGuide type="bottom" id="BYz-qz-jTi"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="Jyr-eS-oe4">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Product_List.png" translatesAutoresizingMaskIntoConstraints="NO" id="xed-rz-myC">
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="w9j-3V-CiG">
+                                <rect key="frame" x="8" y="517" width="46" height="43"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="46" id="B7m-Fx-ab3"/>
+                                </constraints>
+                                <state key="normal">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <segue destination="U6U-Up-qrH" kind="modal" id="DZ9-Cl-6r7"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="TIJ-SQ-Akp">
+                                <rect key="frame" x="265" y="517" width="46" height="43"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="46" id="3VL-oR-G8N"/>
+                                </constraints>
+                                <state key="normal">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <segue destination="lvF-rf-nL1" kind="modal" id="Dzv-5p-S4I"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="UT0-pL-5LJ">
+                                <rect key="frame" x="6" y="14" width="35" height="30"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                <state key="normal" title="Back">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <segue destination="Qy6-sY-KNE" kind="modal" id="BHm-Xq-mM5"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="grz-Qc-tMR">
+                                <rect key="frame" x="0.0" y="61" width="320" height="99"/>
+                                <state key="normal">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="trailingMargin" secondItem="xed-rz-myC" secondAttribute="trailing" constant="-16" id="07W-Ef-iKF"/>
+                            <constraint firstItem="TIJ-SQ-Akp" firstAttribute="baseline" secondItem="w9j-3V-CiG" secondAttribute="baseline" id="0hG-5a-x9C"/>
+                            <constraint firstItem="BYz-qz-jTi" firstAttribute="top" secondItem="xed-rz-myC" secondAttribute="bottom" id="1zf-Xe-AGY"/>
+                            <constraint firstItem="xed-rz-myC" firstAttribute="leading" secondItem="Jyr-eS-oe4" secondAttribute="leadingMargin" constant="-16" id="7bE-1F-QF5"/>
+                            <constraint firstItem="BYz-qz-jTi" firstAttribute="top" secondItem="w9j-3V-CiG" secondAttribute="bottom" constant="8" symbolic="YES" id="7ue-QI-dMy"/>
+                            <constraint firstItem="w9j-3V-CiG" firstAttribute="top" secondItem="TIJ-SQ-Akp" secondAttribute="top" id="BN8-3Y-RtO"/>
+                            <constraint firstItem="xed-rz-myC" firstAttribute="bottom" secondItem="BYz-qz-jTi" secondAttribute="top" id="GuQ-wY-aFO"/>
+                            <constraint firstItem="xed-rz-myC" firstAttribute="leading" secondItem="Jyr-eS-oe4" secondAttribute="leading" id="Ty3-AG-awK"/>
+                            <constraint firstItem="w9j-3V-CiG" firstAttribute="top" secondItem="m1U-D9-pht" secondAttribute="bottom" constant="497" id="W1G-d0-GWO"/>
+                            <constraint firstItem="TIJ-SQ-Akp" firstAttribute="firstBaseline" secondItem="w9j-3V-CiG" secondAttribute="firstBaseline" id="cCE-tX-i2k"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="TIJ-SQ-Akp" secondAttribute="trailing" constant="-7" id="d0U-YW-d59"/>
+                            <constraint firstItem="xed-rz-myC" firstAttribute="top" secondItem="Jyr-eS-oe4" secondAttribute="topMargin" id="kOZ-Ae-1Ou"/>
+                            <constraint firstItem="BYz-qz-jTi" firstAttribute="top" secondItem="TIJ-SQ-Akp" secondAttribute="bottom" constant="8" symbolic="YES" id="q3d-1g-7rZ"/>
+                            <constraint firstItem="w9j-3V-CiG" firstAttribute="leading" secondItem="Jyr-eS-oe4" secondAttribute="leadingMargin" constant="-8" id="tsY-KD-XPh"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="UeV-zN-Qaf" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1027" y="-312"/>
+        </scene>
+        <!--ProductsFB View Controller-->
+        <scene sceneID="7yf-tf-xTT">
+            <objects>
+                <viewController id="lvF-rf-nL1" customClass="ProductsFBViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="oLd-Lv-Ffi"/>
+                        <viewControllerLayoutGuide type="bottom" id="XoR-cO-FEO"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="fRT-dS-hIe">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="ShareFacebook.png" translatesAutoresizingMaskIntoConstraints="NO" id="xyJ-kv-6Z3">
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wHO-6Y-pP7">
+                                <rect key="frame" x="10" y="15" width="35" height="30"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                <state key="normal" title="Back">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <segue destination="Gsw-gU-2yt" kind="modal" id="p2V-BD-GCm"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ABg-Zh-XMN">
+                                <rect key="frame" x="275" y="15" width="35" height="30"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                <state key="normal" title="Menu">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <segue destination="Qy6-sY-KNE" kind="modal" id="IgB-KH-fle"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Xow-9d-rWq" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1430" y="-946"/>
+        </scene>
+        <!--Products Twitter View Controller-->
+        <scene sceneID="uWC-fx-zqn">
+            <objects>
+                <viewController id="U6U-Up-qrH" customClass="ProductsTwitterViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="vKA-My-emt"/>
+                        <viewControllerLayoutGuide type="bottom" id="5yM-TF-eDC"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="ZYo-gf-g1G">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="ShareTwitter_Palette.png" translatesAutoresizingMaskIntoConstraints="NO" id="8ts-7g-NS1">
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Mob-Pp-QjQ">
+                                <rect key="frame" x="10" y="20" width="35" height="30"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                <state key="normal" title="Back">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <segue destination="Gsw-gU-2yt" kind="modal" id="sSE-jJ-5dR"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Cqi-b3-hWX">
+                                <rect key="frame" x="275" y="20" width="35" height="30"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                <state key="normal" title="Menu">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <segue destination="Qy6-sY-KNE" kind="modal" id="9ei-No-e08"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Xui-lN-U3x" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1430" y="-312"/>
+        </scene>
+        <!--MapFB View Controller-->
+        <scene sceneID="zvF-cu-NtQ">
+            <objects>
+                <viewController id="tS1-4f-axa" customClass="RSVPMapFBViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="OI3-9G-4qW"/>
+                        <viewControllerLayoutGuide type="bottom" id="L0X-VB-jBr"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="AgK-gY-XRr">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="ShareFacebook_Events_b.png" translatesAutoresizingMaskIntoConstraints="NO" id="qyR-xs-lgg">
+                                <rect key="frame" x="0.0" y="-81" width="320" height="729"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="f3L-oN-wfo">
+                                <rect key="frame" x="10" y="20" width="35" height="30"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                <state key="normal" title="Back">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <segue destination="JAt-TD-uXi" kind="modal" id="sZD-Lh-KP1"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Lbq-BM-LFe">
+                                <rect key="frame" x="275" y="20" width="35" height="30"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                <state key="normal" title="Menu">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <segue destination="Qy6-sY-KNE" kind="modal" id="w6f-an-KJo"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dB5-2q-AwW" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1810" y="48"/>
+        </scene>
+        <!--News LinkFB View Controller-->
+        <scene sceneID="RCv-md-Lfy">
+            <objects>
+                <viewController id="b8P-Zs-geQ" customClass="NewsLinkFBViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="kPj-RU-5d5"/>
+                        <viewControllerLayoutGuide type="bottom" id="dcL-Au-DVU"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="d6o-Ql-IIh">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="ShareFacebook_NewsLink.png" translatesAutoresizingMaskIntoConstraints="NO" id="QdZ-6f-fAf">
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="IiQ-EP-X8E">
+                                <rect key="frame" x="10" y="20" width="35" height="30"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                <state key="normal" title="Back">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <segue destination="mLG-7m-yOC" kind="modal" id="Osp-UC-NAl"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="KjP-VR-cEv">
+                                <rect key="frame" x="275" y="20" width="35" height="30"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                <state key="normal" title="Menu">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <segue destination="Qy6-sY-KNE" kind="modal" id="c0k-YB-Jh3"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="gS3-Ks-ywp" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1810" y="1320"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="EventsButton.png" width="322" height="70"/>
+        <image name="Events_Screen.png" width="320" height="568"/>
+        <image name="Map.png" width="320" height="568"/>
+        <image name="News.png" width="320" height="568"/>
+        <image name="NewsButton.png" width="322" height="70"/>
+        <image name="News_Link.png" width="320" height="568"/>
+        <image name="PlayButton.png" width="322" height="70"/>
+        <image name="ProductList.png" width="322" height="70"/>
+        <image name="Product_List.png" width="320" height="568"/>
+        <image name="Sample screen.jpg" width="667" height="1184"/>
+        <image name="ShareFacebook.png" width="320" height="568"/>
+        <image name="ShareFacebook_Events_b.png" width="320" height="568"/>
+        <image name="ShareFacebook_NewsLink.png" width="320" height="568"/>
+        <image name="ShareTwitter_Events.png" width="320" height="568"/>
+        <image name="ShareTwitter_NewsLink.png" width="320" height="568"/>
+        <image name="ShareTwitter_Palette.png" width="320" height="568"/>
+        <image name="VideoViewFrame.png" width="320" height="179"/>
+    </resources>
+    <simulatedMetricsContainer key="defaultSimulatedMetrics">
+        <simulatedStatusBarMetrics key="statusBar"/>
+        <simulatedOrientationMetrics key="orientation"/>
+        <simulatedScreenMetrics key="destination" type="retina4"/>
+    </simulatedMetricsContainer>
+    <inferredMetricsTieBreakers>
+        <segue reference="AKD-1y-iDY"/>
+        <segue reference="fHI-9h-GZQ"/>
+        <segue reference="0td-s1-TP5"/>
+        <segue reference="xOp-Ge-OdE"/>
+        <segue reference="JMs-2g-2lj"/>
+        <segue reference="8vF-fl-9YW"/>
+        <segue reference="vgu-mG-N7Z"/>
+        <segue reference="tzm-tO-qJq"/>
+        <segue reference="TdF-KV-xjc"/>
+        <segue reference="Jgk-jf-eTW"/>
+    </inferredMetricsTieBreakers>
+</document>

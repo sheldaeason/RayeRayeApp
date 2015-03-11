@@ -1,0 +1,905 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		3BE87DC9E8D995AD11B74698 /* Pods.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 28010D493A4297A9015F9C70 /* Pods.framework */; settings = {ATTRIBUTES = (Weak, ); }; };
+		B1456FB51AA7A3B7006779E6 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1456FB41AA7A3B7006779E6 /* AppDelegate.swift */; };
+		B1456FB71AA7A3B7006779E6 /* SplashViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1456FB61AA7A3B7006779E6 /* SplashViewController.swift */; };
+		B1456FBA1AA7A3B7006779E6 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B1456FB81AA7A3B7006779E6 /* Main.storyboard */; };
+		B1456FBC1AA7A3B7006779E6 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B1456FBB1AA7A3B7006779E6 /* Images.xcassets */; };
+		B1456FBF1AA7A3B7006779E6 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = B1456FBD1AA7A3B7006779E6 /* LaunchScreen.xib */; };
+		B1456FCB1AA7A3B7006779E6 /* RayeRayeApp_DesignModelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1456FCA1AA7A3B7006779E6 /* RayeRayeApp_DesignModelTests.swift */; };
+		B14570101AA7C3FD006779E6 /* Sample screen.jpg in Resources */ = {isa = PBXBuildFile; fileRef = B145700F1AA7C3FD006779E6 /* Sample screen.jpg */; };
+		B14570251AA7C8C5006779E6 /* 142011-11667501-ItsMyRayeRaye_Logo_Web_jpg.jpg in Resources */ = {isa = PBXBuildFile; fileRef = B14570121AA7C8C5006779E6 /* 142011-11667501-ItsMyRayeRaye_Logo_Web_jpg.jpg */; };
+		B14570261AA7C8C5006779E6 /* 822ad7f6fd0c480cf52bb61823fd4651.jpg in Resources */ = {isa = PBXBuildFile; fileRef = B14570131AA7C8C5006779E6 /* 822ad7f6fd0c480cf52bb61823fd4651.jpg */; };
+		B14570271AA7C8C5006779E6 /* Holiday_MakeUp.png in Resources */ = {isa = PBXBuildFile; fileRef = B14570141AA7C8C5006779E6 /* Holiday_MakeUp.png */; };
+		B14570281AA7C8C5006779E6 /* Holiday_MakeUp.psd in Resources */ = {isa = PBXBuildFile; fileRef = B14570151AA7C8C5006779E6 /* Holiday_MakeUp.psd */; };
+		B14570291AA7C8C5006779E6 /* image.jpg in Resources */ = {isa = PBXBuildFile; fileRef = B14570161AA7C8C5006779E6 /* image.jpg */; };
+		B145702A1AA7C8C5006779E6 /* image_preview.png in Resources */ = {isa = PBXBuildFile; fileRef = B14570171AA7C8C5006779E6 /* image_preview.png */; };
+		B145702B1AA7C8C5006779E6 /* instagram-logo-transparent-png-i11.png in Resources */ = {isa = PBXBuildFile; fileRef = B14570181AA7C8C5006779E6 /* instagram-logo-transparent-png-i11.png */; };
+		B145702C1AA7C8C5006779E6 /* maxresdefault-2.jpg in Resources */ = {isa = PBXBuildFile; fileRef = B14570191AA7C8C5006779E6 /* maxresdefault-2.jpg */; };
+		B145702D1AA7C8C5006779E6 /* maxresdefault-3.jpg in Resources */ = {isa = PBXBuildFile; fileRef = B145701A1AA7C8C5006779E6 /* maxresdefault-3.jpg */; };
+		B145702E1AA7C8C5006779E6 /* maxresdefault.jpg in Resources */ = {isa = PBXBuildFile; fileRef = B145701B1AA7C8C5006779E6 /* maxresdefault.jpg */; };
+		B145702F1AA7C8C5006779E6 /* photo-4.jpg in Resources */ = {isa = PBXBuildFile; fileRef = B145701C1AA7C8C5006779E6 /* photo-4.jpg */; };
+		B14570301AA7C8C5006779E6 /* raye_raye_1280x720.jpg in Resources */ = {isa = PBXBuildFile; fileRef = B145701D1AA7C8C5006779E6 /* raye_raye_1280x720.jpg */; };
+		B14570311AA7C8C5006779E6 /* RayeRaye_Splash.png in Resources */ = {isa = PBXBuildFile; fileRef = B145701E1AA7C8C5006779E6 /* RayeRaye_Splash.png */; };
+		B14570321AA7C8C5006779E6 /* RayeRaye_Splash.psd in Resources */ = {isa = PBXBuildFile; fileRef = B145701F1AA7C8C5006779E6 /* RayeRaye_Splash.psd */; };
+		B14570331AA7C8C5006779E6 /* Sample screen.png in Resources */ = {isa = PBXBuildFile; fileRef = B14570201AA7C8C5006779E6 /* Sample screen.png */; };
+		B14570341AA7C8C5006779E6 /* Sample screen.psd in Resources */ = {isa = PBXBuildFile; fileRef = B14570211AA7C8C5006779E6 /* Sample screen.psd */; };
+		B14570351AA7C8C5006779E6 /* Splash_RayeRaye.png in Resources */ = {isa = PBXBuildFile; fileRef = B14570221AA7C8C5006779E6 /* Splash_RayeRaye.png */; };
+		B14570361AA7C8C5006779E6 /* Splash_RayeRaye.psd in Resources */ = {isa = PBXBuildFile; fileRef = B14570231AA7C8C5006779E6 /* Splash_RayeRaye.psd */; };
+		B14570371AA7C8C5006779E6 /* twitter_icon__png__by_ceeeko-d4s07h6.png in Resources */ = {isa = PBXBuildFile; fileRef = B14570241AA7C8C5006779E6 /* twitter_icon__png__by_ceeeko-d4s07h6.png */; };
+		B14570391AA7CCFB006779E6 /* play_button.png in Resources */ = {isa = PBXBuildFile; fileRef = B14570381AA7CCFB006779E6 /* play_button.png */; };
+		B145703B1AA7CD2C006779E6 /* PlayButton.png in Resources */ = {isa = PBXBuildFile; fileRef = B145703A1AA7CD2C006779E6 /* PlayButton.png */; };
+		B145703D1AA7D8B3006779E6 /* ProductList.png in Resources */ = {isa = PBXBuildFile; fileRef = B145703C1AA7D8B3006779E6 /* ProductList.png */; };
+		B145703F1AA7D988006779E6 /* NewsButton.png in Resources */ = {isa = PBXBuildFile; fileRef = B145703E1AA7D988006779E6 /* NewsButton.png */; };
+		B14570411AA7D9B7006779E6 /* EventsButton.png in Resources */ = {isa = PBXBuildFile; fileRef = B14570401AA7D9B7006779E6 /* EventsButton.png */; };
+		B14570431AA7F32D006779E6 /* Product_List.png in Resources */ = {isa = PBXBuildFile; fileRef = B14570421AA7F32D006779E6 /* Product_List.png */; };
+		B1A5327F1AAB6FB0003196DB /* Events_Screen.png in Resources */ = {isa = PBXBuildFile; fileRef = B1A5327E1AAB6FB0003196DB /* Events_Screen.png */; };
+		B1A532811AAB79EE003196DB /* Map.png in Resources */ = {isa = PBXBuildFile; fileRef = B1A532801AAB79EE003196DB /* Map.png */; };
+		B1A532831AAB7BD8003196DB /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B1A532821AAB7BD8003196DB /* MapKit.framework */; };
+		B1A532851AAB8190003196DB /* VideoViewFrame.png in Resources */ = {isa = PBXBuildFile; fileRef = B1A532841AAB8190003196DB /* VideoViewFrame.png */; };
+		B1A532871AAB8C4F003196DB /* News.png in Resources */ = {isa = PBXBuildFile; fileRef = B1A532861AAB8C4F003196DB /* News.png */; };
+		B1A532B61AAB8CA1003196DB /* 142011-11667501-ItsMyRayeRaye_Logo_Web_jpg.jpg in Resources */ = {isa = PBXBuildFile; fileRef = B1A532891AAB8CA1003196DB /* 142011-11667501-ItsMyRayeRaye_Logo_Web_jpg.jpg */; };
+		B1A532B71AAB8CA1003196DB /* 2000px-Heart_corazón.svg.png in Resources */ = {isa = PBXBuildFile; fileRef = B1A5328A1AAB8CA1003196DB /* 2000px-Heart_corazón.svg.png */; };
+		B1A532B81AAB8CA1003196DB /* 2254058.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = B1A5328B1AAB8CA1003196DB /* 2254058.jpeg */; };
+		B1A532B91AAB8CA1003196DB /* 24-Colors-Eye-Shadow-Palette-font-b-Eyeshadow-b-font-Brand-Makeup-font-b-Gifts-b.jpg in Resources */ = {isa = PBXBuildFile; fileRef = B1A5328C1AAB8CA1003196DB /* 24-Colors-Eye-Shadow-Palette-font-b-Eyeshadow-b-font-Brand-Makeup-font-b-Gifts-b.jpg */; };
+		B1A532BA1AAB8CA1003196DB /* 822ad7f6fd0c480cf52bb61823fd4651.jpg in Resources */ = {isa = PBXBuildFile; fileRef = B1A5328D1AAB8CA1003196DB /* 822ad7f6fd0c480cf52bb61823fd4651.jpg */; };
+		B1A532BB1AAB8CA1003196DB /* ColorPallette.psd in Resources */ = {isa = PBXBuildFile; fileRef = B1A5328E1AAB8CA1003196DB /* ColorPallette.psd */; };
+		B1A532BC1AAB8CA1003196DB /* Events_Screen.png in Resources */ = {isa = PBXBuildFile; fileRef = B1A5328F1AAB8CA1003196DB /* Events_Screen.png */; };
+		B1A532BD1AAB8CA1003196DB /* Events_Screen.psd in Resources */ = {isa = PBXBuildFile; fileRef = B1A532901AAB8CA1003196DB /* Events_Screen.psd */; };
+		B1A532BE1AAB8CA1003196DB /* EventsButton.png in Resources */ = {isa = PBXBuildFile; fileRef = B1A532911AAB8CA1003196DB /* EventsButton.png */; };
+		B1A532BF1AAB8CA1003196DB /* Holiday_MakeUp.png in Resources */ = {isa = PBXBuildFile; fileRef = B1A532921AAB8CA1003196DB /* Holiday_MakeUp.png */; };
+		B1A532C01AAB8CA1003196DB /* Holiday_MakeUp.psd in Resources */ = {isa = PBXBuildFile; fileRef = B1A532931AAB8CA1003196DB /* Holiday_MakeUp.psd */; };
+		B1A532C11AAB8CA1003196DB /* image.jpg in Resources */ = {isa = PBXBuildFile; fileRef = B1A532941AAB8CA1003196DB /* image.jpg */; };
+		B1A532C21AAB8CA1003196DB /* image_preview.png in Resources */ = {isa = PBXBuildFile; fileRef = B1A532951AAB8CA1003196DB /* image_preview.png */; };
+		B1A532C31AAB8CA1003196DB /* instagram-logo-transparent-png-i11.png in Resources */ = {isa = PBXBuildFile; fileRef = B1A532961AAB8CA1003196DB /* instagram-logo-transparent-png-i11.png */; };
+		B1A532C41AAB8CA1003196DB /* lipstick_shimmer_2.jpg in Resources */ = {isa = PBXBuildFile; fileRef = B1A532971AAB8CA1003196DB /* lipstick_shimmer_2.jpg */; };
+		B1A532C51AAB8CA1003196DB /* MAC-Concealer_Final.jpg in Resources */ = {isa = PBXBuildFile; fileRef = B1A532981AAB8CA1003196DB /* MAC-Concealer_Final.jpg */; };
+		B1A532C61AAB8CA1003196DB /* mac-msf.jpg in Resources */ = {isa = PBXBuildFile; fileRef = B1A532991AAB8CA1003196DB /* mac-msf.jpg */; };
+		B1A532C71AAB8CA1003196DB /* Map.png in Resources */ = {isa = PBXBuildFile; fileRef = B1A5329A1AAB8CA1003196DB /* Map.png */; };
+		B1A532C81AAB8CA1003196DB /* Map.psd in Resources */ = {isa = PBXBuildFile; fileRef = B1A5329B1AAB8CA1003196DB /* Map.psd */; };
+		B1A532C91AAB8CA1003196DB /* maxresdefault-2.jpg in Resources */ = {isa = PBXBuildFile; fileRef = B1A5329C1AAB8CA1003196DB /* maxresdefault-2.jpg */; };
+		B1A532CA1AAB8CA1003196DB /* maxresdefault-3.jpg in Resources */ = {isa = PBXBuildFile; fileRef = B1A5329D1AAB8CA1003196DB /* maxresdefault-3.jpg */; };
+		B1A532CB1AAB8CA1003196DB /* maxresdefault.jpg in Resources */ = {isa = PBXBuildFile; fileRef = B1A5329E1AAB8CA1003196DB /* maxresdefault.jpg */; };
+		B1A532CC1AAB8CA1003196DB /* News.png in Resources */ = {isa = PBXBuildFile; fileRef = B1A5329F1AAB8CA1003196DB /* News.png */; };
+		B1A532CD1AAB8CA1003196DB /* News.psd in Resources */ = {isa = PBXBuildFile; fileRef = B1A532A01AAB8CA1003196DB /* News.psd */; };
+		B1A532CE1AAB8CA1003196DB /* NewsButton.png in Resources */ = {isa = PBXBuildFile; fileRef = B1A532A11AAB8CA1003196DB /* NewsButton.png */; };
+		B1A532CF1AAB8CA1003196DB /* p17tkbf6imob21ok1pi81t161mha4.png in Resources */ = {isa = PBXBuildFile; fileRef = B1A532A21AAB8CA1003196DB /* p17tkbf6imob21ok1pi81t161mha4.png */; };
+		B1A532D01AAB8CA1003196DB /* photo-4.jpg in Resources */ = {isa = PBXBuildFile; fileRef = B1A532A31AAB8CA1003196DB /* photo-4.jpg */; };
+		B1A532D11AAB8CA1003196DB /* PlayButton.png in Resources */ = {isa = PBXBuildFile; fileRef = B1A532A41AAB8CA1003196DB /* PlayButton.png */; };
+		B1A532D21AAB8CA1003196DB /* PlayButton.psd in Resources */ = {isa = PBXBuildFile; fileRef = B1A532A51AAB8CA1003196DB /* PlayButton.psd */; };
+		B1A532D31AAB8CA1003196DB /* Product_List.png in Resources */ = {isa = PBXBuildFile; fileRef = B1A532A61AAB8CA1003196DB /* Product_List.png */; };
+		B1A532D41AAB8CA1003196DB /* ProductList.png in Resources */ = {isa = PBXBuildFile; fileRef = B1A532A71AAB8CA1003196DB /* ProductList.png */; };
+		B1A532D51AAB8CA1003196DB /* ProductList.psd in Resources */ = {isa = PBXBuildFile; fileRef = B1A532A81AAB8CA1003196DB /* ProductList.psd */; };
+		B1A532D61AAB8CA1003196DB /* raye_raye_1280x720.jpg in Resources */ = {isa = PBXBuildFile; fileRef = B1A532A91AAB8CA1003196DB /* raye_raye_1280x720.jpg */; };
+		B1A532D71AAB8CA1003196DB /* RayeRaye_Splash.png in Resources */ = {isa = PBXBuildFile; fileRef = B1A532AA1AAB8CA1003196DB /* RayeRaye_Splash.png */; };
+		B1A532D81AAB8CA1003196DB /* RayeRaye_Splash.psd in Resources */ = {isa = PBXBuildFile; fileRef = B1A532AB1AAB8CA1003196DB /* RayeRaye_Splash.psd */; };
+		B1A532D91AAB8CA1003196DB /* Sample screen.jpg in Resources */ = {isa = PBXBuildFile; fileRef = B1A532AC1AAB8CA1003196DB /* Sample screen.jpg */; };
+		B1A532DA1AAB8CA1003196DB /* Sample screen.png in Resources */ = {isa = PBXBuildFile; fileRef = B1A532AD1AAB8CA1003196DB /* Sample screen.png */; };
+		B1A532DB1AAB8CA1003196DB /* Sample screen.psd in Resources */ = {isa = PBXBuildFile; fileRef = B1A532AE1AAB8CA1003196DB /* Sample screen.psd */; };
+		B1A532DC1AAB8CA1003196DB /* sculpting_blush_28522.png in Resources */ = {isa = PBXBuildFile; fileRef = B1A532AF1AAB8CA1003196DB /* sculpting_blush_28522.png */; };
+		B1A532DD1AAB8CA1003196DB /* Splash_RayeRaye.png in Resources */ = {isa = PBXBuildFile; fileRef = B1A532B01AAB8CA1003196DB /* Splash_RayeRaye.png */; };
+		B1A532DE1AAB8CA1003196DB /* Splash_RayeRaye.psd in Resources */ = {isa = PBXBuildFile; fileRef = B1A532B11AAB8CA1003196DB /* Splash_RayeRaye.psd */; };
+		B1A532DF1AAB8CA1003196DB /* SplashScreen.psd in Resources */ = {isa = PBXBuildFile; fileRef = B1A532B21AAB8CA1003196DB /* SplashScreen.psd */; };
+		B1A532E01AAB8CA1003196DB /* twitter_icon__png__by_ceeeko-d4s07h6.png in Resources */ = {isa = PBXBuildFile; fileRef = B1A532B31AAB8CA1003196DB /* twitter_icon__png__by_ceeeko-d4s07h6.png */; };
+		B1A532E11AAB8CA1003196DB /* VideoViewFrame.png in Resources */ = {isa = PBXBuildFile; fileRef = B1A532B41AAB8CA1003196DB /* VideoViewFrame.png */; };
+		B1A532E21AAB8CA1003196DB /* VideoViewFrame.psd in Resources */ = {isa = PBXBuildFile; fileRef = B1A532B51AAB8CA1003196DB /* VideoViewFrame.psd */; };
+		B1A532E41AAB8DB2003196DB /* News.png in Resources */ = {isa = PBXBuildFile; fileRef = B1A532E31AAB8DB2003196DB /* News.png */; };
+		B1A532E61AABA201003196DB /* ShareFacebook.png in Resources */ = {isa = PBXBuildFile; fileRef = B1A532E51AABA201003196DB /* ShareFacebook.png */; };
+		B1A532E81AABA443003196DB /* ShareFacebook_Events.png in Resources */ = {isa = PBXBuildFile; fileRef = B1A532E71AABA443003196DB /* ShareFacebook_Events.png */; };
+		B1A532EA1AABAA68003196DB /* ShareFacebook_Events_b.png in Resources */ = {isa = PBXBuildFile; fileRef = B1A532E91AABAA68003196DB /* ShareFacebook_Events_b.png */; };
+		B1A532EC1AABAFDD003196DB /* News_Link.png in Resources */ = {isa = PBXBuildFile; fileRef = B1A532EB1AABAFDD003196DB /* News_Link.png */; };
+		B1A532EE1AABB2AA003196DB /* ShareFacebook_NewsLink.png in Resources */ = {isa = PBXBuildFile; fileRef = B1A532ED1AABB2AA003196DB /* ShareFacebook_NewsLink.png */; };
+		B1A532F21AABBAA9003196DB /* ShareTwitter_Events.png in Resources */ = {isa = PBXBuildFile; fileRef = B1A532EF1AABBAA9003196DB /* ShareTwitter_Events.png */; };
+		B1A532F31AABBAA9003196DB /* ShareTwitter_NewsLink.png in Resources */ = {isa = PBXBuildFile; fileRef = B1A532F01AABBAA9003196DB /* ShareTwitter_NewsLink.png */; };
+		B1A532F41AABBAA9003196DB /* ShareTwitter_Palette.png in Resources */ = {isa = PBXBuildFile; fileRef = B1A532F11AABBAA9003196DB /* ShareTwitter_Palette.png */; };
+		B1A532F61AAE7274003196DB /* YTPlayerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1A532F51AAE7274003196DB /* YTPlayerViewController.swift */; };
+		B1A532F81AAE72C5003196DB /* FavoritesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1A532F71AAE72C5003196DB /* FavoritesViewController.swift */; };
+		B1A532FA1AAE7340003196DB /* EventsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1A532F91AAE7340003196DB /* EventsViewController.swift */; };
+		B1A532FC1AAE737E003196DB /* NewsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1A532FB1AAE737E003196DB /* NewsViewController.swift */; };
+		B1A532FE1AAE73E3003196DB /* ProductsFBViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1A532FD1AAE73E3003196DB /* ProductsFBViewController.swift */; };
+		B1A533001AAE7424003196DB /* ProductsTwitterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1A532FF1AAE7424003196DB /* ProductsTwitterViewController.swift */; };
+		B1A533021AAE7484003196DB /* RSVPMapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1A533011AAE7484003196DB /* RSVPMapViewController.swift */; };
+		B1A533041AAE74D7003196DB /* RSVPMapFBViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1A533031AAE74D7003196DB /* RSVPMapFBViewController.swift */; };
+		B1A533061AAE7508003196DB /* RSVPMapTwitterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1A533051AAE7508003196DB /* RSVPMapTwitterViewController.swift */; };
+		B1A533081AAE7556003196DB /* NewsLinkViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1A533071AAE7556003196DB /* NewsLinkViewController.swift */; };
+		B1A5330A1AAE7761003196DB /* NewsLinkFBViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1A533091AAE7761003196DB /* NewsLinkFBViewController.swift */; };
+		B1A5330C1AAE7798003196DB /* NewsLinkTwitterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1A5330B1AAE7798003196DB /* NewsLinkTwitterViewController.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		B1456FC51AA7A3B7006779E6 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = B1456FA71AA7A3B7006779E6 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = B1456FAE1AA7A3B7006779E6;
+			remoteInfo = RayeRayeApp_DesignModel;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		1E8B88CB241115240D4EE856 /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
+		28010D493A4297A9015F9C70 /* Pods.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		96FEC3718E6C9B5484320578 /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
+		B1456FAF1AA7A3B7006779E6 /* RayeRayeApp_DesignModel.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RayeRayeApp_DesignModel.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		B1456FB31AA7A3B7006779E6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B1456FB41AA7A3B7006779E6 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		B1456FB61AA7A3B7006779E6 /* SplashViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SplashViewController.swift; sourceTree = "<group>"; };
+		B1456FB91AA7A3B7006779E6 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		B1456FBB1AA7A3B7006779E6 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		B1456FBE1AA7A3B7006779E6 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
+		B1456FC41AA7A3B7006779E6 /* RayeRayeApp_DesignModelTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = RayeRayeApp_DesignModelTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		B1456FC91AA7A3B7006779E6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B1456FCA1AA7A3B7006779E6 /* RayeRayeApp_DesignModelTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RayeRayeApp_DesignModelTests.swift; sourceTree = "<group>"; };
+		B145700F1AA7C3FD006779E6 /* Sample screen.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = "Sample screen.jpg"; path = "../../../Downloads/GA_MobileAppDev_Course/Final/RayeRayeApp_DesignModel/Sample screen.jpg"; sourceTree = "<group>"; };
+		B14570121AA7C8C5006779E6 /* 142011-11667501-ItsMyRayeRaye_Logo_Web_jpg.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = "142011-11667501-ItsMyRayeRaye_Logo_Web_jpg.jpg"; path = "../../../Downloads/GA_MobileAppDev_Course/Final/RayeRayeApp_DesignModel/RayeRayeApp_DesignModel/Final App Project/Assets/142011-11667501-ItsMyRayeRaye_Logo_Web_jpg.jpg"; sourceTree = "<group>"; };
+		B14570131AA7C8C5006779E6 /* 822ad7f6fd0c480cf52bb61823fd4651.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = 822ad7f6fd0c480cf52bb61823fd4651.jpg; path = "../../../Downloads/GA_MobileAppDev_Course/Final/RayeRayeApp_DesignModel/RayeRayeApp_DesignModel/Final App Project/Assets/822ad7f6fd0c480cf52bb61823fd4651.jpg"; sourceTree = "<group>"; };
+		B14570141AA7C8C5006779E6 /* Holiday_MakeUp.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = Holiday_MakeUp.png; path = "../../../Downloads/GA_MobileAppDev_Course/Final/RayeRayeApp_DesignModel/RayeRayeApp_DesignModel/Final App Project/Assets/Holiday_MakeUp.png"; sourceTree = "<group>"; };
+		B14570151AA7C8C5006779E6 /* Holiday_MakeUp.psd */ = {isa = PBXFileReference; lastKnownFileType = file; name = Holiday_MakeUp.psd; path = "../../../Downloads/GA_MobileAppDev_Course/Final/RayeRayeApp_DesignModel/RayeRayeApp_DesignModel/Final App Project/Assets/Holiday_MakeUp.psd"; sourceTree = "<group>"; };
+		B14570161AA7C8C5006779E6 /* image.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = image.jpg; path = "../../../Downloads/GA_MobileAppDev_Course/Final/RayeRayeApp_DesignModel/RayeRayeApp_DesignModel/Final App Project/Assets/image.jpg"; sourceTree = "<group>"; };
+		B14570171AA7C8C5006779E6 /* image_preview.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = image_preview.png; path = "../../../Downloads/GA_MobileAppDev_Course/Final/RayeRayeApp_DesignModel/RayeRayeApp_DesignModel/Final App Project/Assets/image_preview.png"; sourceTree = "<group>"; };
+		B14570181AA7C8C5006779E6 /* instagram-logo-transparent-png-i11.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "instagram-logo-transparent-png-i11.png"; path = "../../../Downloads/GA_MobileAppDev_Course/Final/RayeRayeApp_DesignModel/RayeRayeApp_DesignModel/Final App Project/Assets/instagram-logo-transparent-png-i11.png"; sourceTree = "<group>"; };
+		B14570191AA7C8C5006779E6 /* maxresdefault-2.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = "maxresdefault-2.jpg"; path = "../../../Downloads/GA_MobileAppDev_Course/Final/RayeRayeApp_DesignModel/RayeRayeApp_DesignModel/Final App Project/Assets/maxresdefault-2.jpg"; sourceTree = "<group>"; };
+		B145701A1AA7C8C5006779E6 /* maxresdefault-3.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = "maxresdefault-3.jpg"; path = "../../../Downloads/GA_MobileAppDev_Course/Final/RayeRayeApp_DesignModel/RayeRayeApp_DesignModel/Final App Project/Assets/maxresdefault-3.jpg"; sourceTree = "<group>"; };
+		B145701B1AA7C8C5006779E6 /* maxresdefault.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = maxresdefault.jpg; path = "../../../Downloads/GA_MobileAppDev_Course/Final/RayeRayeApp_DesignModel/RayeRayeApp_DesignModel/Final App Project/Assets/maxresdefault.jpg"; sourceTree = "<group>"; };
+		B145701C1AA7C8C5006779E6 /* photo-4.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = "photo-4.jpg"; path = "../../../Downloads/GA_MobileAppDev_Course/Final/RayeRayeApp_DesignModel/RayeRayeApp_DesignModel/Final App Project/Assets/photo-4.jpg"; sourceTree = "<group>"; };
+		B145701D1AA7C8C5006779E6 /* raye_raye_1280x720.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = raye_raye_1280x720.jpg; path = "../../../Downloads/GA_MobileAppDev_Course/Final/RayeRayeApp_DesignModel/RayeRayeApp_DesignModel/Final App Project/Assets/raye_raye_1280x720.jpg"; sourceTree = "<group>"; };
+		B145701E1AA7C8C5006779E6 /* RayeRaye_Splash.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = RayeRaye_Splash.png; path = "../../../Downloads/GA_MobileAppDev_Course/Final/RayeRayeApp_DesignModel/RayeRayeApp_DesignModel/Final App Project/Assets/RayeRaye_Splash.png"; sourceTree = "<group>"; };
+		B145701F1AA7C8C5006779E6 /* RayeRaye_Splash.psd */ = {isa = PBXFileReference; lastKnownFileType = file; name = RayeRaye_Splash.psd; path = "../../../Downloads/GA_MobileAppDev_Course/Final/RayeRayeApp_DesignModel/RayeRayeApp_DesignModel/Final App Project/Assets/RayeRaye_Splash.psd"; sourceTree = "<group>"; };
+		B14570201AA7C8C5006779E6 /* Sample screen.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Sample screen.png"; path = "../../../Downloads/GA_MobileAppDev_Course/Final/RayeRayeApp_DesignModel/RayeRayeApp_DesignModel/Final App Project/Assets/Sample screen.png"; sourceTree = "<group>"; };
+		B14570211AA7C8C5006779E6 /* Sample screen.psd */ = {isa = PBXFileReference; lastKnownFileType = file; name = "Sample screen.psd"; path = "../../../Downloads/GA_MobileAppDev_Course/Final/RayeRayeApp_DesignModel/RayeRayeApp_DesignModel/Final App Project/Assets/Sample screen.psd"; sourceTree = "<group>"; };
+		B14570221AA7C8C5006779E6 /* Splash_RayeRaye.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = Splash_RayeRaye.png; path = "../../../Downloads/GA_MobileAppDev_Course/Final/RayeRayeApp_DesignModel/RayeRayeApp_DesignModel/Final App Project/Assets/Splash_RayeRaye.png"; sourceTree = "<group>"; };
+		B14570231AA7C8C5006779E6 /* Splash_RayeRaye.psd */ = {isa = PBXFileReference; lastKnownFileType = file; name = Splash_RayeRaye.psd; path = "../../../Downloads/GA_MobileAppDev_Course/Final/RayeRayeApp_DesignModel/RayeRayeApp_DesignModel/Final App Project/Assets/Splash_RayeRaye.psd"; sourceTree = "<group>"; };
+		B14570241AA7C8C5006779E6 /* twitter_icon__png__by_ceeeko-d4s07h6.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "twitter_icon__png__by_ceeeko-d4s07h6.png"; path = "../../../Downloads/GA_MobileAppDev_Course/Final/RayeRayeApp_DesignModel/RayeRayeApp_DesignModel/Final App Project/Assets/twitter_icon__png__by_ceeeko-d4s07h6.png"; sourceTree = "<group>"; };
+		B14570381AA7CCFB006779E6 /* play_button.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = play_button.png; path = ../../../Downloads/GA_MobileAppDev_Course/Final/RayeRayeApp_DesignModel/RayeRayeApp_DesignModel/Assets/play_button.png; sourceTree = "<group>"; };
+		B145703A1AA7CD2C006779E6 /* PlayButton.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = PlayButton.png; path = ../../../Downloads/GA_MobileAppDev_Course/Final/RayeRayeApp_DesignModel/RayeRayeApp_DesignModel/PlayButton.png; sourceTree = "<group>"; };
+		B145703C1AA7D8B3006779E6 /* ProductList.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = ProductList.png; path = ../../../Downloads/GA_MobileAppDev_Course/Final/RayeRayeApp_DesignModel/RayeRayeApp_DesignModel/ProductList.png; sourceTree = "<group>"; };
+		B145703E1AA7D988006779E6 /* NewsButton.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = NewsButton.png; path = ../../../Downloads/GA_MobileAppDev_Course/Final/RayeRayeApp_DesignModel/RayeRayeApp_DesignModel/NewsButton.png; sourceTree = "<group>"; };
+		B14570401AA7D9B7006779E6 /* EventsButton.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = EventsButton.png; path = ../../../Downloads/GA_MobileAppDev_Course/Final/RayeRayeApp_DesignModel/RayeRayeApp_DesignModel/EventsButton.png; sourceTree = "<group>"; };
+		B14570421AA7F32D006779E6 /* Product_List.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = Product_List.png; path = ../../../Downloads/GA_MobileAppDev_Course/Final/RayeRayeApp_DesignModel/RayeRayeApp_DesignModel/Product_List.png; sourceTree = "<group>"; };
+		B1A5327E1AAB6FB0003196DB /* Events_Screen.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = Events_Screen.png; path = ../../../Downloads/GA_MobileAppDev_Course/Final/RayeRayeApp_DesignModel/RayeRayeApp_DesignModel/Events_Screen.png; sourceTree = "<group>"; };
+		B1A532801AAB79EE003196DB /* Map.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = Map.png; path = ../../../Downloads/GA_MobileAppDev_Course/Final/RayeRayeApp_DesignModel/RayeRayeApp_DesignModel/Map.png; sourceTree = "<group>"; };
+		B1A532821AAB7BD8003196DB /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
+		B1A532841AAB8190003196DB /* VideoViewFrame.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = VideoViewFrame.png; sourceTree = "<group>"; };
+		B1A532861AAB8C4F003196DB /* News.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = News.png; sourceTree = "<group>"; };
+		B1A532891AAB8CA1003196DB /* 142011-11667501-ItsMyRayeRaye_Logo_Web_jpg.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "142011-11667501-ItsMyRayeRaye_Logo_Web_jpg.jpg"; sourceTree = "<group>"; };
+		B1A5328A1AAB8CA1003196DB /* 2000px-Heart_corazón.svg.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "2000px-Heart_corazón.svg.png"; sourceTree = "<group>"; };
+		B1A5328B1AAB8CA1003196DB /* 2254058.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = 2254058.jpeg; sourceTree = "<group>"; };
+		B1A5328C1AAB8CA1003196DB /* 24-Colors-Eye-Shadow-Palette-font-b-Eyeshadow-b-font-Brand-Makeup-font-b-Gifts-b.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "24-Colors-Eye-Shadow-Palette-font-b-Eyeshadow-b-font-Brand-Makeup-font-b-Gifts-b.jpg"; sourceTree = "<group>"; };
+		B1A5328D1AAB8CA1003196DB /* 822ad7f6fd0c480cf52bb61823fd4651.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = 822ad7f6fd0c480cf52bb61823fd4651.jpg; sourceTree = "<group>"; };
+		B1A5328E1AAB8CA1003196DB /* ColorPallette.psd */ = {isa = PBXFileReference; lastKnownFileType = file; path = ColorPallette.psd; sourceTree = "<group>"; };
+		B1A5328F1AAB8CA1003196DB /* Events_Screen.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Events_Screen.png; sourceTree = "<group>"; };
+		B1A532901AAB8CA1003196DB /* Events_Screen.psd */ = {isa = PBXFileReference; lastKnownFileType = file; path = Events_Screen.psd; sourceTree = "<group>"; };
+		B1A532911AAB8CA1003196DB /* EventsButton.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = EventsButton.png; sourceTree = "<group>"; };
+		B1A532921AAB8CA1003196DB /* Holiday_MakeUp.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Holiday_MakeUp.png; sourceTree = "<group>"; };
+		B1A532931AAB8CA1003196DB /* Holiday_MakeUp.psd */ = {isa = PBXFileReference; lastKnownFileType = file; path = Holiday_MakeUp.psd; sourceTree = "<group>"; };
+		B1A532941AAB8CA1003196DB /* image.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = image.jpg; sourceTree = "<group>"; };
+		B1A532951AAB8CA1003196DB /* image_preview.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = image_preview.png; sourceTree = "<group>"; };
+		B1A532961AAB8CA1003196DB /* instagram-logo-transparent-png-i11.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "instagram-logo-transparent-png-i11.png"; sourceTree = "<group>"; };
+		B1A532971AAB8CA1003196DB /* lipstick_shimmer_2.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = lipstick_shimmer_2.jpg; sourceTree = "<group>"; };
+		B1A532981AAB8CA1003196DB /* MAC-Concealer_Final.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "MAC-Concealer_Final.jpg"; sourceTree = "<group>"; };
+		B1A532991AAB8CA1003196DB /* mac-msf.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "mac-msf.jpg"; sourceTree = "<group>"; };
+		B1A5329A1AAB8CA1003196DB /* Map.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Map.png; sourceTree = "<group>"; };
+		B1A5329B1AAB8CA1003196DB /* Map.psd */ = {isa = PBXFileReference; lastKnownFileType = file; path = Map.psd; sourceTree = "<group>"; };
+		B1A5329C1AAB8CA1003196DB /* maxresdefault-2.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "maxresdefault-2.jpg"; sourceTree = "<group>"; };
+		B1A5329D1AAB8CA1003196DB /* maxresdefault-3.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "maxresdefault-3.jpg"; sourceTree = "<group>"; };
+		B1A5329E1AAB8CA1003196DB /* maxresdefault.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = maxresdefault.jpg; sourceTree = "<group>"; };
+		B1A5329F1AAB8CA1003196DB /* News.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = News.png; sourceTree = "<group>"; };
+		B1A532A01AAB8CA1003196DB /* News.psd */ = {isa = PBXFileReference; lastKnownFileType = file; path = News.psd; sourceTree = "<group>"; };
+		B1A532A11AAB8CA1003196DB /* NewsButton.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = NewsButton.png; sourceTree = "<group>"; };
+		B1A532A21AAB8CA1003196DB /* p17tkbf6imob21ok1pi81t161mha4.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = p17tkbf6imob21ok1pi81t161mha4.png; sourceTree = "<group>"; };
+		B1A532A31AAB8CA1003196DB /* photo-4.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "photo-4.jpg"; sourceTree = "<group>"; };
+		B1A532A41AAB8CA1003196DB /* PlayButton.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = PlayButton.png; sourceTree = "<group>"; };
+		B1A532A51AAB8CA1003196DB /* PlayButton.psd */ = {isa = PBXFileReference; lastKnownFileType = file; path = PlayButton.psd; sourceTree = "<group>"; };
+		B1A532A61AAB8CA1003196DB /* Product_List.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Product_List.png; sourceTree = "<group>"; };
+		B1A532A71AAB8CA1003196DB /* ProductList.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = ProductList.png; sourceTree = "<group>"; };
+		B1A532A81AAB8CA1003196DB /* ProductList.psd */ = {isa = PBXFileReference; lastKnownFileType = file; path = ProductList.psd; sourceTree = "<group>"; };
+		B1A532A91AAB8CA1003196DB /* raye_raye_1280x720.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = raye_raye_1280x720.jpg; sourceTree = "<group>"; };
+		B1A532AA1AAB8CA1003196DB /* RayeRaye_Splash.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = RayeRaye_Splash.png; sourceTree = "<group>"; };
+		B1A532AB1AAB8CA1003196DB /* RayeRaye_Splash.psd */ = {isa = PBXFileReference; lastKnownFileType = file; path = RayeRaye_Splash.psd; sourceTree = "<group>"; };
+		B1A532AC1AAB8CA1003196DB /* Sample screen.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "Sample screen.jpg"; sourceTree = "<group>"; };
+		B1A532AD1AAB8CA1003196DB /* Sample screen.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Sample screen.png"; sourceTree = "<group>"; };
+		B1A532AE1AAB8CA1003196DB /* Sample screen.psd */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Sample screen.psd"; sourceTree = "<group>"; };
+		B1A532AF1AAB8CA1003196DB /* sculpting_blush_28522.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = sculpting_blush_28522.png; sourceTree = "<group>"; };
+		B1A532B01AAB8CA1003196DB /* Splash_RayeRaye.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Splash_RayeRaye.png; sourceTree = "<group>"; };
+		B1A532B11AAB8CA1003196DB /* Splash_RayeRaye.psd */ = {isa = PBXFileReference; lastKnownFileType = file; path = Splash_RayeRaye.psd; sourceTree = "<group>"; };
+		B1A532B21AAB8CA1003196DB /* SplashScreen.psd */ = {isa = PBXFileReference; lastKnownFileType = file; path = SplashScreen.psd; sourceTree = "<group>"; };
+		B1A532B31AAB8CA1003196DB /* twitter_icon__png__by_ceeeko-d4s07h6.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "twitter_icon__png__by_ceeeko-d4s07h6.png"; sourceTree = "<group>"; };
+		B1A532B41AAB8CA1003196DB /* VideoViewFrame.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = VideoViewFrame.png; sourceTree = "<group>"; };
+		B1A532B51AAB8CA1003196DB /* VideoViewFrame.psd */ = {isa = PBXFileReference; lastKnownFileType = file; path = VideoViewFrame.psd; sourceTree = "<group>"; };
+		B1A532E31AAB8DB2003196DB /* News.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = News.png; path = ../../../Downloads/GA_MobileAppDev_Course/Final/RayeRayeApp_DesignModel/RayeRayeApp_DesignModel/News.png; sourceTree = "<group>"; };
+		B1A532E51AABA201003196DB /* ShareFacebook.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = ShareFacebook.png; path = ../../../Downloads/GA_MobileAppDev_Course/Final/RayeRayeApp_DesignModel/RayeRayeApp_DesignModel/ShareFacebook.png; sourceTree = "<group>"; };
+		B1A532E71AABA443003196DB /* ShareFacebook_Events.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = ShareFacebook_Events.png; path = ../../../Downloads/GA_MobileAppDev_Course/Final/RayeRayeApp_DesignModel/RayeRayeApp_DesignModel/ShareFacebook_Events.png; sourceTree = "<group>"; };
+		B1A532E91AABAA68003196DB /* ShareFacebook_Events_b.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = ShareFacebook_Events_b.png; path = ../../../Downloads/GA_MobileAppDev_Course/Final/RayeRayeApp_DesignModel/RayeRayeApp_DesignModel/ShareFacebook_Events_b.png; sourceTree = "<group>"; };
+		B1A532EB1AABAFDD003196DB /* News_Link.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = News_Link.png; path = ../../../Downloads/GA_MobileAppDev_Course/Final/RayeRayeApp_DesignModel/RayeRayeApp_DesignModel/News_Link.png; sourceTree = "<group>"; };
+		B1A532ED1AABB2AA003196DB /* ShareFacebook_NewsLink.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = ShareFacebook_NewsLink.png; path = ../../../Downloads/GA_MobileAppDev_Course/Final/RayeRayeApp_DesignModel/RayeRayeApp_DesignModel/ShareFacebook_NewsLink.png; sourceTree = "<group>"; };
+		B1A532EF1AABBAA9003196DB /* ShareTwitter_Events.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = ShareTwitter_Events.png; path = ../../../Downloads/GA_MobileAppDev_Course/Final/RayeRayeApp_DesignModel/RayeRayeApp_DesignModel/ShareTwitter_Events.png; sourceTree = "<group>"; };
+		B1A532F01AABBAA9003196DB /* ShareTwitter_NewsLink.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = ShareTwitter_NewsLink.png; path = ../../../Downloads/GA_MobileAppDev_Course/Final/RayeRayeApp_DesignModel/RayeRayeApp_DesignModel/ShareTwitter_NewsLink.png; sourceTree = "<group>"; };
+		B1A532F11AABBAA9003196DB /* ShareTwitter_Palette.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = ShareTwitter_Palette.png; path = ../../../Downloads/GA_MobileAppDev_Course/Final/RayeRayeApp_DesignModel/RayeRayeApp_DesignModel/ShareTwitter_Palette.png; sourceTree = "<group>"; };
+		B1A532F51AAE7274003196DB /* YTPlayerViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = YTPlayerViewController.swift; sourceTree = "<group>"; };
+		B1A532F71AAE72C5003196DB /* FavoritesViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FavoritesViewController.swift; sourceTree = "<group>"; };
+		B1A532F91AAE7340003196DB /* EventsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EventsViewController.swift; sourceTree = "<group>"; };
+		B1A532FB1AAE737E003196DB /* NewsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NewsViewController.swift; sourceTree = "<group>"; };
+		B1A532FD1AAE73E3003196DB /* ProductsFBViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProductsFBViewController.swift; sourceTree = "<group>"; };
+		B1A532FF1AAE7424003196DB /* ProductsTwitterViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProductsTwitterViewController.swift; sourceTree = "<group>"; };
+		B1A533011AAE7484003196DB /* RSVPMapViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RSVPMapViewController.swift; sourceTree = "<group>"; };
+		B1A533031AAE74D7003196DB /* RSVPMapFBViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RSVPMapFBViewController.swift; sourceTree = "<group>"; };
+		B1A533051AAE7508003196DB /* RSVPMapTwitterViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RSVPMapTwitterViewController.swift; sourceTree = "<group>"; };
+		B1A533071AAE7556003196DB /* NewsLinkViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NewsLinkViewController.swift; sourceTree = "<group>"; };
+		B1A533091AAE7761003196DB /* NewsLinkFBViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NewsLinkFBViewController.swift; sourceTree = "<group>"; };
+		B1A5330B1AAE7798003196DB /* NewsLinkTwitterViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NewsLinkTwitterViewController.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		B1456FAC1AA7A3B7006779E6 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B1A532831AAB7BD8003196DB /* MapKit.framework in Frameworks */,
+				3BE87DC9E8D995AD11B74698 /* Pods.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B1456FC11AA7A3B7006779E6 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		2774603AAC14128153D52841 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				1E8B88CB241115240D4EE856 /* Pods.debug.xcconfig */,
+				96FEC3718E6C9B5484320578 /* Pods.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		B1456FA61AA7A3B7006779E6 = {
+			isa = PBXGroup;
+			children = (
+				B1456FB11AA7A3B7006779E6 /* RayeRayeApp_DesignModel */,
+				B1456FC71AA7A3B7006779E6 /* RayeRayeApp_DesignModelTests */,
+				B1456FB01AA7A3B7006779E6 /* Products */,
+				2774603AAC14128153D52841 /* Pods */,
+				F5F4A50366514562AC9338BC /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		B1456FB01AA7A3B7006779E6 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				B1456FAF1AA7A3B7006779E6 /* RayeRayeApp_DesignModel.app */,
+				B1456FC41AA7A3B7006779E6 /* RayeRayeApp_DesignModelTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		B1456FB11AA7A3B7006779E6 /* RayeRayeApp_DesignModel */ = {
+			isa = PBXGroup;
+			children = (
+				B1456FB41AA7A3B7006779E6 /* AppDelegate.swift */,
+				B1456FB61AA7A3B7006779E6 /* SplashViewController.swift */,
+				B1A532F51AAE7274003196DB /* YTPlayerViewController.swift */,
+				B1A532F71AAE72C5003196DB /* FavoritesViewController.swift */,
+				B1A532FD1AAE73E3003196DB /* ProductsFBViewController.swift */,
+				B1A532FF1AAE7424003196DB /* ProductsTwitterViewController.swift */,
+				B1A532F91AAE7340003196DB /* EventsViewController.swift */,
+				B1A533011AAE7484003196DB /* RSVPMapViewController.swift */,
+				B1A533031AAE74D7003196DB /* RSVPMapFBViewController.swift */,
+				B1A533051AAE7508003196DB /* RSVPMapTwitterViewController.swift */,
+				B1A532FB1AAE737E003196DB /* NewsViewController.swift */,
+				B1A533071AAE7556003196DB /* NewsLinkViewController.swift */,
+				B1A533091AAE7761003196DB /* NewsLinkFBViewController.swift */,
+				B1A5330B1AAE7798003196DB /* NewsLinkTwitterViewController.swift */,
+				B1456FB81AA7A3B7006779E6 /* Main.storyboard */,
+				B1A532881AAB8CA1003196DB /* Assets */,
+				B14570111AA7C8C5006779E6 /* Assets2 */,
+				B1456FBB1AA7A3B7006779E6 /* Images.xcassets */,
+				B1456FBD1AA7A3B7006779E6 /* LaunchScreen.xib */,
+				B1456FB21AA7A3B7006779E6 /* Supporting Files */,
+			);
+			path = RayeRayeApp_DesignModel;
+			sourceTree = "<group>";
+		};
+		B1456FB21AA7A3B7006779E6 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				B1456FB31AA7A3B7006779E6 /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		B1456FC71AA7A3B7006779E6 /* RayeRayeApp_DesignModelTests */ = {
+			isa = PBXGroup;
+			children = (
+				B1456FCA1AA7A3B7006779E6 /* RayeRayeApp_DesignModelTests.swift */,
+				B1456FC81AA7A3B7006779E6 /* Supporting Files */,
+			);
+			path = RayeRayeApp_DesignModelTests;
+			sourceTree = "<group>";
+		};
+		B1456FC81AA7A3B7006779E6 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				B1456FC91AA7A3B7006779E6 /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		B14570111AA7C8C5006779E6 /* Assets2 */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Assets2;
+			path = "Final App Project/Assets";
+			sourceTree = "<group>";
+		};
+		B1A532881AAB8CA1003196DB /* Assets */ = {
+			isa = PBXGroup;
+			children = (
+				B145700F1AA7C3FD006779E6 /* Sample screen.jpg */,
+				B1A532861AAB8C4F003196DB /* News.png */,
+				B1A532841AAB8190003196DB /* VideoViewFrame.png */,
+				B1A532801AAB79EE003196DB /* Map.png */,
+				B1A5327E1AAB6FB0003196DB /* Events_Screen.png */,
+				B14570421AA7F32D006779E6 /* Product_List.png */,
+				B14570401AA7D9B7006779E6 /* EventsButton.png */,
+				B145703E1AA7D988006779E6 /* NewsButton.png */,
+				B14570121AA7C8C5006779E6 /* 142011-11667501-ItsMyRayeRaye_Logo_Web_jpg.jpg */,
+				B14570131AA7C8C5006779E6 /* 822ad7f6fd0c480cf52bb61823fd4651.jpg */,
+				B14570141AA7C8C5006779E6 /* Holiday_MakeUp.png */,
+				B14570151AA7C8C5006779E6 /* Holiday_MakeUp.psd */,
+				B14570161AA7C8C5006779E6 /* image.jpg */,
+				B14570171AA7C8C5006779E6 /* image_preview.png */,
+				B14570181AA7C8C5006779E6 /* instagram-logo-transparent-png-i11.png */,
+				B14570191AA7C8C5006779E6 /* maxresdefault-2.jpg */,
+				B145701A1AA7C8C5006779E6 /* maxresdefault-3.jpg */,
+				B145701B1AA7C8C5006779E6 /* maxresdefault.jpg */,
+				B145701C1AA7C8C5006779E6 /* photo-4.jpg */,
+				B145701D1AA7C8C5006779E6 /* raye_raye_1280x720.jpg */,
+				B145701E1AA7C8C5006779E6 /* RayeRaye_Splash.png */,
+				B145701F1AA7C8C5006779E6 /* RayeRaye_Splash.psd */,
+				B14570201AA7C8C5006779E6 /* Sample screen.png */,
+				B14570211AA7C8C5006779E6 /* Sample screen.psd */,
+				B14570221AA7C8C5006779E6 /* Splash_RayeRaye.png */,
+				B14570231AA7C8C5006779E6 /* Splash_RayeRaye.psd */,
+				B14570241AA7C8C5006779E6 /* twitter_icon__png__by_ceeeko-d4s07h6.png */,
+				B145703C1AA7D8B3006779E6 /* ProductList.png */,
+				B1A532EF1AABBAA9003196DB /* ShareTwitter_Events.png */,
+				B1A532F01AABBAA9003196DB /* ShareTwitter_NewsLink.png */,
+				B1A532F11AABBAA9003196DB /* ShareTwitter_Palette.png */,
+				B1A532ED1AABB2AA003196DB /* ShareFacebook_NewsLink.png */,
+				B1A532EB1AABAFDD003196DB /* News_Link.png */,
+				B1A532E91AABAA68003196DB /* ShareFacebook_Events_b.png */,
+				B1A532E71AABA443003196DB /* ShareFacebook_Events.png */,
+				B1A532E51AABA201003196DB /* ShareFacebook.png */,
+				B1A532E31AAB8DB2003196DB /* News.png */,
+				B145703A1AA7CD2C006779E6 /* PlayButton.png */,
+				B14570381AA7CCFB006779E6 /* play_button.png */,
+				B1A532891AAB8CA1003196DB /* 142011-11667501-ItsMyRayeRaye_Logo_Web_jpg.jpg */,
+				B1A5328A1AAB8CA1003196DB /* 2000px-Heart_corazón.svg.png */,
+				B1A5328B1AAB8CA1003196DB /* 2254058.jpeg */,
+				B1A5328C1AAB8CA1003196DB /* 24-Colors-Eye-Shadow-Palette-font-b-Eyeshadow-b-font-Brand-Makeup-font-b-Gifts-b.jpg */,
+				B1A5328D1AAB8CA1003196DB /* 822ad7f6fd0c480cf52bb61823fd4651.jpg */,
+				B1A5328E1AAB8CA1003196DB /* ColorPallette.psd */,
+				B1A5328F1AAB8CA1003196DB /* Events_Screen.png */,
+				B1A532901AAB8CA1003196DB /* Events_Screen.psd */,
+				B1A532911AAB8CA1003196DB /* EventsButton.png */,
+				B1A532921AAB8CA1003196DB /* Holiday_MakeUp.png */,
+				B1A532931AAB8CA1003196DB /* Holiday_MakeUp.psd */,
+				B1A532941AAB8CA1003196DB /* image.jpg */,
+				B1A532951AAB8CA1003196DB /* image_preview.png */,
+				B1A532961AAB8CA1003196DB /* instagram-logo-transparent-png-i11.png */,
+				B1A532971AAB8CA1003196DB /* lipstick_shimmer_2.jpg */,
+				B1A532981AAB8CA1003196DB /* MAC-Concealer_Final.jpg */,
+				B1A532991AAB8CA1003196DB /* mac-msf.jpg */,
+				B1A5329A1AAB8CA1003196DB /* Map.png */,
+				B1A5329B1AAB8CA1003196DB /* Map.psd */,
+				B1A5329C1AAB8CA1003196DB /* maxresdefault-2.jpg */,
+				B1A5329D1AAB8CA1003196DB /* maxresdefault-3.jpg */,
+				B1A5329E1AAB8CA1003196DB /* maxresdefault.jpg */,
+				B1A5329F1AAB8CA1003196DB /* News.png */,
+				B1A532A01AAB8CA1003196DB /* News.psd */,
+				B1A532A11AAB8CA1003196DB /* NewsButton.png */,
+				B1A532A21AAB8CA1003196DB /* p17tkbf6imob21ok1pi81t161mha4.png */,
+				B1A532A31AAB8CA1003196DB /* photo-4.jpg */,
+				B1A532A41AAB8CA1003196DB /* PlayButton.png */,
+				B1A532A51AAB8CA1003196DB /* PlayButton.psd */,
+				B1A532A61AAB8CA1003196DB /* Product_List.png */,
+				B1A532A71AAB8CA1003196DB /* ProductList.png */,
+				B1A532A81AAB8CA1003196DB /* ProductList.psd */,
+				B1A532A91AAB8CA1003196DB /* raye_raye_1280x720.jpg */,
+				B1A532AA1AAB8CA1003196DB /* RayeRaye_Splash.png */,
+				B1A532AB1AAB8CA1003196DB /* RayeRaye_Splash.psd */,
+				B1A532AC1AAB8CA1003196DB /* Sample screen.jpg */,
+				B1A532AD1AAB8CA1003196DB /* Sample screen.png */,
+				B1A532AE1AAB8CA1003196DB /* Sample screen.psd */,
+				B1A532AF1AAB8CA1003196DB /* sculpting_blush_28522.png */,
+				B1A532B01AAB8CA1003196DB /* Splash_RayeRaye.png */,
+				B1A532B11AAB8CA1003196DB /* Splash_RayeRaye.psd */,
+				B1A532B21AAB8CA1003196DB /* SplashScreen.psd */,
+				B1A532B31AAB8CA1003196DB /* twitter_icon__png__by_ceeeko-d4s07h6.png */,
+				B1A532B41AAB8CA1003196DB /* VideoViewFrame.png */,
+				B1A532B51AAB8CA1003196DB /* VideoViewFrame.psd */,
+			);
+			name = Assets;
+			path = "../../../../../Documents/Final App Project/Assets";
+			sourceTree = "<group>";
+		};
+		F5F4A50366514562AC9338BC /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				B1A532821AAB7BD8003196DB /* MapKit.framework */,
+				28010D493A4297A9015F9C70 /* Pods.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		B1456FAE1AA7A3B7006779E6 /* RayeRayeApp_DesignModel */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B1456FCE1AA7A3B7006779E6 /* Build configuration list for PBXNativeTarget "RayeRayeApp_DesignModel" */;
+			buildPhases = (
+				FA69C7AB8B143469D497F889 /* Check Pods Manifest.lock */,
+				B1456FAB1AA7A3B7006779E6 /* Sources */,
+				B1456FAC1AA7A3B7006779E6 /* Frameworks */,
+				B1456FAD1AA7A3B7006779E6 /* Resources */,
+				EB375B025D9AE2548BACC74A /* Embed Pods Frameworks */,
+				68A922E0A6E1449CBC3056BE /* Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = RayeRayeApp_DesignModel;
+			productName = RayeRayeApp_DesignModel;
+			productReference = B1456FAF1AA7A3B7006779E6 /* RayeRayeApp_DesignModel.app */;
+			productType = "com.apple.product-type.application";
+		};
+		B1456FC31AA7A3B7006779E6 /* RayeRayeApp_DesignModelTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B1456FD11AA7A3B7006779E6 /* Build configuration list for PBXNativeTarget "RayeRayeApp_DesignModelTests" */;
+			buildPhases = (
+				B1456FC01AA7A3B7006779E6 /* Sources */,
+				B1456FC11AA7A3B7006779E6 /* Frameworks */,
+				B1456FC21AA7A3B7006779E6 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				B1456FC61AA7A3B7006779E6 /* PBXTargetDependency */,
+			);
+			name = RayeRayeApp_DesignModelTests;
+			productName = RayeRayeApp_DesignModelTests;
+			productReference = B1456FC41AA7A3B7006779E6 /* RayeRayeApp_DesignModelTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		B1456FA71AA7A3B7006779E6 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0610;
+				ORGANIZATIONNAME = "Shelda Eason";
+				TargetAttributes = {
+					B1456FAE1AA7A3B7006779E6 = {
+						CreatedOnToolsVersion = 6.1.1;
+					};
+					B1456FC31AA7A3B7006779E6 = {
+						CreatedOnToolsVersion = 6.1.1;
+						TestTargetID = B1456FAE1AA7A3B7006779E6;
+					};
+				};
+			};
+			buildConfigurationList = B1456FAA1AA7A3B7006779E6 /* Build configuration list for PBXProject "RayeRayeApp_DesignModel" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = B1456FA61AA7A3B7006779E6;
+			productRefGroup = B1456FB01AA7A3B7006779E6 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				B1456FAE1AA7A3B7006779E6 /* RayeRayeApp_DesignModel */,
+				B1456FC31AA7A3B7006779E6 /* RayeRayeApp_DesignModelTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		B1456FAD1AA7A3B7006779E6 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B14570341AA7C8C5006779E6 /* Sample screen.psd in Resources */,
+				B1A532E61AABA201003196DB /* ShareFacebook.png in Resources */,
+				B1A532DB1AAB8CA1003196DB /* Sample screen.psd in Resources */,
+				B1A532D21AAB8CA1003196DB /* PlayButton.psd in Resources */,
+				B1A532811AAB79EE003196DB /* Map.png in Resources */,
+				B1A532CE1AAB8CA1003196DB /* NewsButton.png in Resources */,
+				B1A532D51AAB8CA1003196DB /* ProductList.psd in Resources */,
+				B1A532D61AAB8CA1003196DB /* raye_raye_1280x720.jpg in Resources */,
+				B1A532B61AAB8CA1003196DB /* 142011-11667501-ItsMyRayeRaye_Logo_Web_jpg.jpg in Resources */,
+				B1A532F21AABBAA9003196DB /* ShareTwitter_Events.png in Resources */,
+				B1A532851AAB8190003196DB /* VideoViewFrame.png in Resources */,
+				B1A532E41AAB8DB2003196DB /* News.png in Resources */,
+				B1A532871AAB8C4F003196DB /* News.png in Resources */,
+				B1A532E01AAB8CA1003196DB /* twitter_icon__png__by_ceeeko-d4s07h6.png in Resources */,
+				B1A532CD1AAB8CA1003196DB /* News.psd in Resources */,
+				B145702D1AA7C8C5006779E6 /* maxresdefault-3.jpg in Resources */,
+				B1A532BD1AAB8CA1003196DB /* Events_Screen.psd in Resources */,
+				B1A532B81AAB8CA1003196DB /* 2254058.jpeg in Resources */,
+				B1A532CC1AAB8CA1003196DB /* News.png in Resources */,
+				B14570351AA7C8C5006779E6 /* Splash_RayeRaye.png in Resources */,
+				B1A532EC1AABAFDD003196DB /* News_Link.png in Resources */,
+				B1A532D11AAB8CA1003196DB /* PlayButton.png in Resources */,
+				B1A532BA1AAB8CA1003196DB /* 822ad7f6fd0c480cf52bb61823fd4651.jpg in Resources */,
+				B14570311AA7C8C5006779E6 /* RayeRaye_Splash.png in Resources */,
+				B145703B1AA7CD2C006779E6 /* PlayButton.png in Resources */,
+				B1A532C51AAB8CA1003196DB /* MAC-Concealer_Final.jpg in Resources */,
+				B1A532BE1AAB8CA1003196DB /* EventsButton.png in Resources */,
+				B14570301AA7C8C5006779E6 /* raye_raye_1280x720.jpg in Resources */,
+				B1A532E11AAB8CA1003196DB /* VideoViewFrame.png in Resources */,
+				B1A532EE1AABB2AA003196DB /* ShareFacebook_NewsLink.png in Resources */,
+				B1A532BF1AAB8CA1003196DB /* Holiday_MakeUp.png in Resources */,
+				B14570261AA7C8C5006779E6 /* 822ad7f6fd0c480cf52bb61823fd4651.jpg in Resources */,
+				B1A532DA1AAB8CA1003196DB /* Sample screen.png in Resources */,
+				B14570361AA7C8C5006779E6 /* Splash_RayeRaye.psd in Resources */,
+				B1A532F41AABBAA9003196DB /* ShareTwitter_Palette.png in Resources */,
+				B1A532F31AABBAA9003196DB /* ShareTwitter_NewsLink.png in Resources */,
+				B1A532D01AAB8CA1003196DB /* photo-4.jpg in Resources */,
+				B1456FBA1AA7A3B7006779E6 /* Main.storyboard in Resources */,
+				B145702A1AA7C8C5006779E6 /* image_preview.png in Resources */,
+				B1A532C31AAB8CA1003196DB /* instagram-logo-transparent-png-i11.png in Resources */,
+				B14570251AA7C8C5006779E6 /* 142011-11667501-ItsMyRayeRaye_Logo_Web_jpg.jpg in Resources */,
+				B1A532DE1AAB8CA1003196DB /* Splash_RayeRaye.psd in Resources */,
+				B1A532D91AAB8CA1003196DB /* Sample screen.jpg in Resources */,
+				B1A532E21AAB8CA1003196DB /* VideoViewFrame.psd in Resources */,
+				B1A532C91AAB8CA1003196DB /* maxresdefault-2.jpg in Resources */,
+				B14570281AA7C8C5006779E6 /* Holiday_MakeUp.psd in Resources */,
+				B1A532DF1AAB8CA1003196DB /* SplashScreen.psd in Resources */,
+				B14570411AA7D9B7006779E6 /* EventsButton.png in Resources */,
+				B14570321AA7C8C5006779E6 /* RayeRaye_Splash.psd in Resources */,
+				B1A532BB1AAB8CA1003196DB /* ColorPallette.psd in Resources */,
+				B1A532C81AAB8CA1003196DB /* Map.psd in Resources */,
+				B1A5327F1AAB6FB0003196DB /* Events_Screen.png in Resources */,
+				B1A532EA1AABAA68003196DB /* ShareFacebook_Events_b.png in Resources */,
+				B14570371AA7C8C5006779E6 /* twitter_icon__png__by_ceeeko-d4s07h6.png in Resources */,
+				B145703F1AA7D988006779E6 /* NewsButton.png in Resources */,
+				B1A532BC1AAB8CA1003196DB /* Events_Screen.png in Resources */,
+				B1A532CF1AAB8CA1003196DB /* p17tkbf6imob21ok1pi81t161mha4.png in Resources */,
+				B1A532C41AAB8CA1003196DB /* lipstick_shimmer_2.jpg in Resources */,
+				B1A532E81AABA443003196DB /* ShareFacebook_Events.png in Resources */,
+				B1A532D31AAB8CA1003196DB /* Product_List.png in Resources */,
+				B145702F1AA7C8C5006779E6 /* photo-4.jpg in Resources */,
+				B1A532D71AAB8CA1003196DB /* RayeRaye_Splash.png in Resources */,
+				B1456FBF1AA7A3B7006779E6 /* LaunchScreen.xib in Resources */,
+				B1A532C71AAB8CA1003196DB /* Map.png in Resources */,
+				B14570271AA7C8C5006779E6 /* Holiday_MakeUp.png in Resources */,
+				B14570101AA7C3FD006779E6 /* Sample screen.jpg in Resources */,
+				B1A532C21AAB8CA1003196DB /* image_preview.png in Resources */,
+				B14570431AA7F32D006779E6 /* Product_List.png in Resources */,
+				B1456FBC1AA7A3B7006779E6 /* Images.xcassets in Resources */,
+				B14570331AA7C8C5006779E6 /* Sample screen.png in Resources */,
+				B1A532C01AAB8CA1003196DB /* Holiday_MakeUp.psd in Resources */,
+				B14570391AA7CCFB006779E6 /* play_button.png in Resources */,
+				B14570291AA7C8C5006779E6 /* image.jpg in Resources */,
+				B145702E1AA7C8C5006779E6 /* maxresdefault.jpg in Resources */,
+				B1A532B91AAB8CA1003196DB /* 24-Colors-Eye-Shadow-Palette-font-b-Eyeshadow-b-font-Brand-Makeup-font-b-Gifts-b.jpg in Resources */,
+				B1A532C61AAB8CA1003196DB /* mac-msf.jpg in Resources */,
+				B145703D1AA7D8B3006779E6 /* ProductList.png in Resources */,
+				B1A532CA1AAB8CA1003196DB /* maxresdefault-3.jpg in Resources */,
+				B1A532DD1AAB8CA1003196DB /* Splash_RayeRaye.png in Resources */,
+				B1A532B71AAB8CA1003196DB /* 2000px-Heart_corazón.svg.png in Resources */,
+				B145702C1AA7C8C5006779E6 /* maxresdefault-2.jpg in Resources */,
+				B1A532CB1AAB8CA1003196DB /* maxresdefault.jpg in Resources */,
+				B1A532D81AAB8CA1003196DB /* RayeRaye_Splash.psd in Resources */,
+				B1A532DC1AAB8CA1003196DB /* sculpting_blush_28522.png in Resources */,
+				B145702B1AA7C8C5006779E6 /* instagram-logo-transparent-png-i11.png in Resources */,
+				B1A532C11AAB8CA1003196DB /* image.jpg in Resources */,
+				B1A532D41AAB8CA1003196DB /* ProductList.png in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B1456FC21AA7A3B7006779E6 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		68A922E0A6E1449CBC3056BE /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods/Pods-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		EB375B025D9AE2548BACC74A /* Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods/Pods-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		FA69C7AB8B143469D497F889 /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		B1456FAB1AA7A3B7006779E6 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B1456FB71AA7A3B7006779E6 /* SplashViewController.swift in Sources */,
+				B1456FB51AA7A3B7006779E6 /* AppDelegate.swift in Sources */,
+				B1A532F81AAE72C5003196DB /* FavoritesViewController.swift in Sources */,
+				B1A532FC1AAE737E003196DB /* NewsViewController.swift in Sources */,
+				B1A533001AAE7424003196DB /* ProductsTwitterViewController.swift in Sources */,
+				B1A5330A1AAE7761003196DB /* NewsLinkFBViewController.swift in Sources */,
+				B1A532F61AAE7274003196DB /* YTPlayerViewController.swift in Sources */,
+				B1A5330C1AAE7798003196DB /* NewsLinkTwitterViewController.swift in Sources */,
+				B1A533021AAE7484003196DB /* RSVPMapViewController.swift in Sources */,
+				B1A532FA1AAE7340003196DB /* EventsViewController.swift in Sources */,
+				B1A533041AAE74D7003196DB /* RSVPMapFBViewController.swift in Sources */,
+				B1A533081AAE7556003196DB /* NewsLinkViewController.swift in Sources */,
+				B1A533061AAE7508003196DB /* RSVPMapTwitterViewController.swift in Sources */,
+				B1A532FE1AAE73E3003196DB /* ProductsFBViewController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B1456FC01AA7A3B7006779E6 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B1456FCB1AA7A3B7006779E6 /* RayeRayeApp_DesignModelTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		B1456FC61AA7A3B7006779E6 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = B1456FAE1AA7A3B7006779E6 /* RayeRayeApp_DesignModel */;
+			targetProxy = B1456FC51AA7A3B7006779E6 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		B1456FB81AA7A3B7006779E6 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				B1456FB91AA7A3B7006779E6 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		B1456FBD1AA7A3B7006779E6 /* LaunchScreen.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				B1456FBE1AA7A3B7006779E6 /* Base */,
+			);
+			name = LaunchScreen.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		B1456FCC1AA7A3B7006779E6 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		B1456FCD1AA7A3B7006779E6 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		B1456FCF1AA7A3B7006779E6 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 1E8B88CB241115240D4EE856 /* Pods.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = RayeRayeApp_DesignModel/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		B1456FD01AA7A3B7006779E6 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 96FEC3718E6C9B5484320578 /* Pods.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = RayeRayeApp_DesignModel/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		B1456FD21AA7A3B7006779E6 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = RayeRayeApp_DesignModelTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/RayeRayeApp_DesignModel.app/RayeRayeApp_DesignModel";
+			};
+			name = Debug;
+		};
+		B1456FD31AA7A3B7006779E6 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = RayeRayeApp_DesignModelTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/RayeRayeApp_DesignModel.app/RayeRayeApp_DesignModel";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		B1456FAA1AA7A3B7006779E6 /* Build configuration list for PBXProject "RayeRayeApp_DesignModel" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B1456FCC1AA7A3B7006779E6 /* Debug */,
+				B1456FCD1AA7A3B7006779E6 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		B1456FCE1AA7A3B7006779E6 /* Build configuration list for PBXNativeTarget "RayeRayeApp_DesignModel" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B1456FCF1AA7A3B7006779E6 /* Debug */,
+				B1456FD01AA7A3B7006779E6 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		B1456FD11AA7A3B7006779E6 /* Build configuration list for PBXNativeTarget "RayeRayeApp_DesignModelTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B1456FD21AA7A3B7006779E6 /* Debug */,
+				B1456FD31AA7A3B7006779E6 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = B1456FA71AA7A3B7006779E6 /* Project object */;
+}
